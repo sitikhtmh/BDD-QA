@@ -1,6 +1,6 @@
-const { defineConfig } = require('cypress')
-const preprocessor = require('@badeball/cypress-cucumber-preprocessor')
-const browserify = require('@badeball/cypress-cucumber-preprocessor')
+const { defineConfig } = require('cypress');
+const preprocessor = require('@badeball/cypress-cucumber-preprocessor');
+const browserify = require('@badeball/cypress-cucumber-preprocessor/browserify');
 
 async function setupNodeEvents(on, config) {
 	await preprocessor.addCucumberPreprocessorPlugin(on, config)
