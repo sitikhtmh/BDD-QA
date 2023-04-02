@@ -1,14 +1,14 @@
 import SearchPage from './searchh.page'
 const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor')
 
-Given('I open a website page', () => {
+Given('User open a website page', () => {
 	SearchPage.visit()
 })
 
-When('I input the word "online" in the search field, then enter', () => {
+When('User input the word "online" in the search field, then enter', () => {
     SearchPage.fillSearch()
 })
 
-Then('I should see the Search Results for the word "online"', () => {
+Then('system displays the results successfully', () => {
     cy.get('h2').should('contain.text','Search Results:')
 })

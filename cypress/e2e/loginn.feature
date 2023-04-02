@@ -4,6 +4,6 @@ Feature: Login to Application
     I want to login into application
 
     Scenario: Valid Login
-        Given I open login page
-        When I submit login
-        Then I should see homepage
+        Given User open login page
+        When User submit login
+        Then User should see homepage
